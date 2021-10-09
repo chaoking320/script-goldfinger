@@ -60,20 +60,7 @@ whyour/qinglong:latest
 
 ![hJuUo2dY9ti5c4F](https://i.loli.net/2021/10/09/hJuUo2dY9ti5c4F.png)
 
-
-## 添加脚本：
-
-```
-主脚本：
-ql raw https://raw.githubusercontent.com/KingRan/JD-Scripts/main/wx_jysz.js
-定时：0 8-22/1 * * *
-```
-![UxLAzK84lM6kR3e](https://i.loli.net/2021/10/09/UxLAzK84lM6kR3e.png)
-
-运行脚本后会自动添加阅读任务
-
-
-## 重要部分：
+## 填写token（重要）：
 
 青龙面板变量填写规则：
 
@@ -87,6 +74,19 @@ export soy_wx_jysz_User_Agent=""
 
 特别注意：请使用自己的UA，防止被封，一个UA不超过两个token
 ```
+
+
+## 添加脚本：
+
+```
+主脚本：
+ql raw https://raw.githubusercontent.com/KingRan/JD-Scripts/main/wx_jysz.js
+定时：0 8-22/1 * * *
+```
+![UxLAzK84lM6kR3e](https://i.loli.net/2021/10/09/UxLAzK84lM6kR3e.png)
+
+运行脚本后会自动添加阅读任务
+
 
 
 ## 运行成功图：
