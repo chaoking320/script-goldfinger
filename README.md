@@ -44,26 +44,34 @@ whyour/qinglong:latest
 
 浏览器进网址：http://ip:5700
 
+## 开始步骤：
+
+首先打开Charles或Fiddler，开启抓包模式
+
+抓包微信，微信再次扫描二维码，不用操作,自动阅读文章，阅读10S左右就可以返回，看到金币增加200即可,就会看到所需的变量值。
+
+
+### 上面的TOKEN以及User_Agent的抓取教程：IOS和Android差不多，以Android为例：
+
+```
+1、打开抓包,微信进金银手指界面 找有http://apponlie.sahaj.cn的连接
+2、点进去他的请求头中token 和 User-Agent
+```
+
+![hJuUo2dY9ti5c4F](https://i.loli.net/2021/10/09/hJuUo2dY9ti5c4F.png)
+
 
 ## 添加脚本：
-
-![21Xdeb5togQuwHi](https://i.loli.net/2021/10/09/21Xdeb5togQuwHi.png)
 
 ```
 主脚本：
 ql raw https://raw.githubusercontent.com/KingRan/JD-Scripts/main/wx_jysz.js
 定时：0 8-22/1 * * *
 ```
-
-
-![Snipaste_2021-10-09_12-37-30.jpg](https://i.loli.net/2021/10/09/uF9zLUeCODYqJNi.jpg)
+![UxLAzK84lM6kR3e](https://i.loli.net/2021/10/09/UxLAzK84lM6kR3e.png)
 
 运行脚本后会自动添加阅读任务
 
-
-## 附依赖下载地址：(已经安装青龙自动修复依赖的下面的依赖可以不用管)
-
-[http://shandianpan.com/f/8Oc6](https://www.juan920.com/?golink=aHR0cDovL3NoYW5kaWFucGFuLmNvbS9mLzhPYzY=)
 
 ## 重要部分：
 
@@ -80,23 +88,13 @@ export soy_wx_jysz_User_Agent=""
 特别注意：请使用自己的UA，防止被封，一个UA不超过两个token
 ```
 
-## 开始步骤：
-
-首先打开Charles或Fiddler，开启抓包模式
-
-
-抓包微信，微信再次扫描二维码，不用操作,自动阅读文章，阅读10S左右就可以返回，看到金币增加200即可,就会看到所需的变量值。
-
-
-### 上面的TOKEN以及User_Agent的抓取教程：IOS和Android差不多，以Android为例：
-
-```
-1、打开抓包,微信进金银手指界面 找有http://apponlie.sahaj.cn的连接
-2、点进去他的请求头中token 和 User-Agent
-```
-
-![hJuUo2dY9ti5c4F](https://i.loli.net/2021/10/09/hJuUo2dY9ti5c4F.png)
 
 ## 运行成功图：
 
 ![](https://www.juan920.com/wp-content/uploads/2021/10/3c54ff691157.png)
+
+
+## 附依赖下载地址：(已经安装青龙自动修复依赖的下面的依赖可以不用管)
+
+[http://shandianpan.com/f/8Oc6](https://www.juan920.com/?golink=aHR0cDovL3NoYW5kaWFucGFuLmNvbS9mLzhPYzY=)
+
